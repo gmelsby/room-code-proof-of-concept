@@ -1,7 +1,7 @@
 def main():
     code_set = set()
     for i in range(26 ** 4 + 1):
-        num = ((i * 18279) % (26 ** 4))
+        num = ((i * 29311) % (26 ** 4))
         code = encode_num(num)
         if code in code_set:
             print(f'code {code} already in codeset: {i} codes generated')
