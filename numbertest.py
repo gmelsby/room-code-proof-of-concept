@@ -21,17 +21,5 @@ def encode_num(number):
 
     return ''.join([chr(97 + num) for num in positions])
 
-def decode_num(code):
-    """
-    takes a 4-letter code and decodes it to a number
-    """
-    num = 0
-    for char in reversed(code):
-        num *= 26
-        num += ord(char) - 97
-
-    return num
-
-
 if __name__ == "__main__":
     main()
